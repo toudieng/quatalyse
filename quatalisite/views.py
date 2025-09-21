@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 def home(request):
     valeurs = ["Rigueur", "Créativité", "Intégrité", "Confidentialité", "Cohésion d’équipe"]
-    return render(request, 'home.html', {'valeurs': valeurs})
+    return render(request, 'index.html', {'valeurs': valeurs})
 
 
 def about(request):
