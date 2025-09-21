@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact | QUATALYSE{% endblock %}
+{% block content %}
+
+<section class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold text-center mb-5">Contactez-nous</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Coordonnées</h5>
+        <p><b>Adresse :</b> Ouest Foire Lot N°18, Dakar</p>
+        <p><b>Tél :</b> +221 77 649 52 85 / 76 159 13 63</p>
+        <p><b>Email :</b> info.quatalyse@gmail.com</p>
+        <p><b>Site :</b> www.quatalyse.com</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Envoyez-nous un message</h5>
+        <form method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" rows="5" placeholder="Votre message"></textarea>
+          </div>
+          <button type="submit" class="btn text-white" style="background:#8A2BE2;">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-4">
+      <iframe src="https://www.google.com/maps?q=Ouest%20Foire%20Lot%20N°18%20Dakar&output=embed" width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

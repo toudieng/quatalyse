@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil - Quatalyse{% endblock %}
+
+{% block content %}
+<main>
+    <section class="bg-light-custom text-dark text-center py-5 section-padding">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold mb-3">Prenez rendez-vous avec l'avenir</h1>
+            <p class="lead mb-4">Votre partenaire expert en Conseil, Audit et Formation QHSE, Développement Durable et Innovation.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary-custom btn-lg px-4">Demander un devis</a>
+        </div>
+    </section>
+
+    <section id="a-propos" class="py-5 section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="{% static 'images/qsn.jpeg' %}" alt="Consultants en discussion" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-3">Qui sommes-nous ?</h2>
+                    <p class="lead">
+                        QUATALYSEest un cabinet spécialisé dans leConseil, l’audit et la formation,et ce, dans les domaines de la Qualité, de l’Hygiène, de la Sécurité, de l’Environnement (QHSE), de la gestion de projet, le développement durable, la RSE et de l’innovation.
+                    </p>
+                    <p class="lead">
+                        Nous accompagnons les entreprises dans les démarches relatives aux normes et référentiels ISO 9001, ISO45001, ISO 14001, ISO 22000, ISO 50001, ISO 21001, MASE…
+                    </p>
+                    <p class="lead">
+                        Nous accompagnons nos clients dans l’optimisation des coûts, la maitrise et l’amélioration de la qualité, la sécurité et santé au travail et l’environnement.
+                    </p>
+                    <a href="{% url 'services' %}" class="btn btn-primary-custom mt-3">Découvrez nos services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">5 Raisons de choisir QUATALYSE</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h4 class="fw-bold text-primary">COMPETENCES</h4>
+                    <p>Les consultants et formateurs de QUATALYSE sont tous certifiés et vont répondre aux besoins de votre entreprise en termes d’innovation et d’évolution.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h4 class="fw-bold text-primary">OFFRE</h4>
+                    <p>Nous proposons des offres sur mesure pour répondre à vos besoins spécifiques.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <h4 class="fw-bold text-primary">PRIX</h4>
+                    <p>Nous offrons les meilleurs prix sur le marché avec possibilités de réduction lors de nos formations en fonction du nombre de participants.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+                    <h4 class="fw-bold text-primary">SERVICE</h4>
+                    <p>Rigueur et professionnalisme guident chacune de nos activités au sein de QUATALYSE.</p>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="fw-bold text-primary">SATISFACTION TOTALE</h4>
+                    <p>Nous visons la satisfaction totale de nos clients et de toutes nos parties intéressées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 section-padding bg-light-custom">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" data-aos="fade-up">NOTRE EQUIPE</h2>
+            <p class="lead text-center mb-5">
+                Une équipe pluridisciplinaire de consultants et formateurs certifiés, de coach et d’expert tous animés par les mêmes valeurs.
+            </p>
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <img src="{% static 'images/Pragmatisme.jpg' %}" class="d-block w-100 img-fluid rounded shadow" alt="Membre de l'équipe 1">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="fw-bold text-primary mb-3">PRAGMATISME</h3>
+                                <p>Aller droit au but, faire simple et opérationnel et obtenir les résultats escomptés.</p>
+                                <p>L’expérience de nos consultants nous permet de construire des systèmes de management adaptés à votre entreprise, quel que soit votre secteur d’activités.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center flex-row-reverse">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <img src="{% static 'images/qualite.jpeg' %}" class="d-block w-100 img-fluid rounded shadow" alt="Membre de l'équipe 2">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="fw-bold text-primary mb-3">QUALITE HUMAINE</h3>
+                                <p>Les projets réussissent mieux lorsqu’ils sont portés par des personnes avec des relations humaines saines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <img src="{% static 'images/defi.jpg' %}" class="d-block w-100 img-fluid rounded shadow" alt="Membre de l'équipe 3">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="fw-bold text-primary mb-3">GOUT DU DEFI</h3>
+                                <p>Challenger nos idées en permanence pour aller au-delà de la demande de notre client.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-custom py-5 section-padding">
+        <div class="container">
+            <div class="row my-5 align-items-center">
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-right">
+                    <h3 class="fw-bold mb-3">Notre mission</h3>
+                    <p>
+                        La mission du cabinet QUATALYSE Conseil est d'accompagner les entreprises et les organisations vers une amélioration continue. Nous offrons une expertise de haut niveau pour les aider à atteindre leurs objectifs en matière de Qualité, Hygiène, Sécurité et Environnement.
+                    </p>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center" data-aos="fade-left">
+                    <img src="{% static 'images/mission.jpg' %}" alt="Mission d'entreprise" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+
+            <div class="row my-5 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="{% static 'images/vision.jpg' %}" alt="Vision stratégique" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 class="fw-bold mb-3">Notre vision</h3>
+                    <p>
+                        Devenir un cabinet leader au Sénégal et en Afrique dans la formation professionnelle et le Coaching.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Nos valeurs et objectifs</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card p-4 h-100 border-0 shadow-sm">
+                        <h4 class="fw-bold text-primary">Rigueur</h4>
+                        <p>La rigueur et le professionnalisme guident chacune de nos activités pour un service irréprochable.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card p-4 h-100 border-0 shadow-sm">
+                        <h4 class="fw-bold text-primary">Créativité</h4>
+                        <p>Nous développons des outils et des méthodologies sur mesure pour répondre à vos besoins uniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card p-4 h-100 border-0 shadow-sm">
+                        <h4 class="fw-bold text-primary">Confidentialité</h4>
+                        <p>Nous assurons une confidentialité totale dans tous nos échanges et interventions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card p-4 h-100 border-0 shadow-sm">
+                        <h4 class="fw-bold text-primary">Intégrité</h4>
+                        <p>Nous agissons avec intégrité et transparence, car la confiance est notre plus grande valeur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-custom py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" data-aos="fade-up">Notre impact en chiffres</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="display-4 fw-bold text-primary">90%</h2>
+                    <p class="lead">Des entreprises certifiées ISO voient leur efficacité opérationnelle s'améliorer.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="display-4 fw-bold text-primary">40%</h2>
+                    <p class="lead">De réduction des accidents de travail grâce à un management de la sécurité rigoureux.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="display-4 fw-bold text-primary">85%</h2>
+                    <p class="lead">Des clients certifiés rapportent une meilleure image de marque et plus de confiance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section py-5 position-relative">
+        <div class="image-container position-relative overflow-hidden rounded shadow-lg" style="height: 450px;">
+            <img src="{% static 'images/rv.jpg' %}" alt="Prenez rendez-vous avec l'avenir" class="img-fluid w-100 h-100" style="object-fit: cover;">
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center text-white p-4">
+                <div class="overlay-content w-100" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-3">Prenez dès maintenant rendez-vous avec l'avenir chez QUATALYSE</h1>
+                    <p class="lead mb-4">
+                        Nous vous accompagnons vers l'excellence opérationnelle grâce à nos formations professionnelles et nos certifications aux normes de qualité (ISO, MASE, etc.). Développez vos compétences et celles de vos équipes pour un avenir prospère et durable.
+                    </p>
+                    <a href="{% url 'contact' %}" class="btn btn-primary-custom btn-lg px-4">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

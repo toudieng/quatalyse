@@ -1,0 +1,94 @@
+:root {
+    --purple-dark: #3a1a45;
+    --gold-accent: #f1c40f;
+    --background-color: #f8f9fa;
+    --white-background: #ffffff;
+}
+
+.bg-purple-dark {
+    background-color: var(--purple-dark) !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: white; 
+}
+
+.top-header {
+    background-color: var(--purple-dark);
+    color: #fff;
+}
+
+.main-navbar {
+    background-color: var(--white-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+    height: 120px; /* Logo agrandi pour une meilleure visibilité */
+}
+
+.nav-link {
+    color: var(--purple-dark) !important; 
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--gold-accent) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--purple-dark);
+    font-weight: 700;
+}
+
+.text-primary {
+    color: var(--gold-accent) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--gold-accent);
+    border: 2px solid var(--gold-accent);
+    color: var(--purple-dark);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--purple-dark);
+    border-color: var(--purple-dark);
+    color: #fff;
+}
+
+.btn-outline-light-custom {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.btn-outline-light-custom:hover {
+    background-color: var(--gold-accent);
+    border-color: var(--gold-accent);
+    color: var(--purple-dark);
+}
+
+.bg-light-custom {
+    background-color: var(--background-color);
+}
+
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}

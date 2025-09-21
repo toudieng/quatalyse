@@ -1,0 +1,305 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Nos services, formations et références - Quatalyse{% endblock %}
+
+{% block content %}
+<main class="container py-5 mt-5 section-padding">
+    <h1 class="text-center fw-bold mb-5" data-aos="fade-up">Nos Services, Formations & Références</h1>
+    
+    <section id="nos-services" class="my-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" data-aos="fade-up">Nos Domaines d'expertise</h2>
+            <p class="lead text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                Nous offrons des services de conseil et d'audit sur mesure pour vous aider à atteindre l'excellence opérationnelle dans 8 domaines d'activités.
+            </p>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/qualite.jpeg' %}" class="card-img-top" alt="Service de Qualité" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">1. Qualité</h5>
+                            <p class="text-muted">Accompagnement, audits et certifications :</p>
+                            <ul class="list-unstyled">
+                                <li>ISO 9001:2015 (Système de management de la qualité)</li>
+                                <li>Audit qualité interne</li>
+                                <li>Gestion de la satisfaction client</li>
+                                <li>Amélioration continue (Kaizen)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/hygiene.jpg' %}" class="card-img-top" alt="Service d'Hygiène" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">2. Hygiène</h5>
+                            <p class="text-muted">Mise en place de systèmes de management de l'hygiène :</p>
+                            <ul class="list-unstyled">
+                                <li>ISO 22000 (Sécurité des denrées alimentaires)</li>
+                                <li>Bonnes pratiques d'hygiène et de fabrication (BPH/BPF)</li>
+                                <li>Audits d'hygiène</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/securite.png' %}" class="card-img-top" alt="Service de Santé et Sécurité" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">3. Santé et Sécurité au Travail</h5>
+                            <p class="text-muted">Prévention et management de la sécurité :</p>
+                            <ul class="list-unstyled">
+                                <li>ISO 45001 (Santé et Sécurité au travail)</li>
+                                <li>Audit de sécurité</li>
+                                <li>Formation aux risques professionnels</li>
+                                <li>Réduction des accidents de travail</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/environnement.jpg' %}" class="card-img-top" alt="Service d'Environnement" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">4. Environnement</h5>
+                            <p class="text-muted">Démarches de gestion environnementale :</p>
+                            <ul class="list-unstyled">
+                                <li>ISO 14001 (Management environnemental)</li>
+                                <li>Bilan carbone</li>
+                                <li>Conseil en développement durable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/energie.jpg' %}" class="card-img-top" alt="Service d'Énergie" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">5. Énergie</h5>
+                            <p class="text-muted">Optimisation de la performance énergétique :</p>
+                            <ul class="list-unstyled">
+                                <li>Mise en place de la norme ISO 50001</li>
+                                <li>Audit énergétique</li>
+                                <li>Management des ressources énergétiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/rse.png' %}" class="card-img-top" alt="Service de RSE et Développement Durable" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">6. RSE & Développement Durable</h5>
+                            <p class="text-muted">Engagement sociétal et durable :</p>
+                            <ul class="list-unstyled">
+                                <li>Mise en œuvre de la norme ISO 26000</li>
+                                <li>Audit des pratiques éthiques</li>
+                                <li>Élaboration de rapports RSE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/gestion.jpeg' %}" class="card-img-top" alt="Service de Gestion de Projet et Innovation" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">7. Gestion de Projet & Innovation</h5>
+                            <p class="text-muted">Accompagnement et coaching :</p>
+                            <ul class="list-unstyled">
+                                <li>Conseil en gestion de projet</li>
+                                <li>Optimisation des processus</li>
+                                <li>Accompagnement à l'innovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <img src="{% static 'images/laboratoires.jpg' %}" class="card-img-top" alt="Service d'Accréditation des laboratoires" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">8. Accréditation des laboratoires</h5>
+                            <p class="text-muted">Conformité et qualité des résultats :</p>
+                            <ul class="list-unstyled">
+                                <li>Mise en place de la norme ISO 17025</li>
+                                <li>Mise en place de la norme ISO 15189</li>
+                                <li>Audit des laboratoires</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formations" class="my-5 section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Nos Formations certifiantes</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 9001 LI / LA</h5>
+                            <p class="card-text">Système de Management de la Qualité : SMQ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 45001 LI / LA</h5>
+                            <p class="card-text">Système de Management de la Sécurité et Santé au Travail : SMSST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 14001 LI / LA</h5>
+                            <p class="card-text">Système de Management Environnemental : SME</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 22000 LI / LA</h5>
+                            <p class="card-text">Système de management de la sécurité des denrées alimentaires : SMSDA – Démarche HACCP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 50001 LI / LA</h5>
+                            <p class="card-text">Système de Management de l’énergie : SME</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 17025 / ISO 15189 LI / LA</h5>
+                            <p class="card-text">Accréditation des laboratoires</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 31000 LI / LA</h5>
+                            <p class="card-text">Gestion des risques</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 26000 LI / LA</h5>
+                            <p class="card-text">Responsabilité Sociétale des Entreprises</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 37001 LI / LA</h5>
+                            <p class="card-text">Système de Management Anti-Corruption : SMAC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">ISO 27001 LI / LA</h5>
+                            <p class="card-text">Système de Management de la Sécurité de l’information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodes-intervention" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Nos méthodes d’intervention</h2>
+            <div class="row g-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <p class="lead">
+                        Notre processus d’accompagnement combine et adapte nos différents modes et thèmes d’intervention afin de répondre à vos exigences. Nous optimisons la performance de vos ressources via des : Conseils, Formations Intra entreprise et des formations inter entreprise.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h4 class="fw-bold text-primary">FORMATION INTRA-ENTREPRISES</h4>
+                        <p>
+                            Elles sont dédiées à votre entreprise et seront réalisées dans vos locaux aux dates de votre choix tout en respectant le triptyque : Qualité, Coût et Délais (QCD).
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 p-4">
+                        <h4 class="fw-bold text-primary">FORMATION MULTI-ENTREPRISES</h4>
+                        <p>
+                            Les formations multi-entreprises sont basées sur des mises en situation réelles entre professionnels venus de différents secteurs : cela permet aux participants de bénéficier d’échanges, d’expérience et d’un apprentissage collaboratif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section py-5 position-relative">
+        <div class="image-container position-relative overflow-hidden rounded shadow-lg" style="height: 450px;">
+            <img src="{% static 'images/rv.jpg' %}" alt="Prenez rendez-vous avec l'avenir" class="img-fluid w-100 h-100" style="object-fit: cover;">
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center text-white p-4">
+                <div class="overlay-content w-100" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-3">Prenez dès maintenant rendez-vous avec l'avenir chez QUATALYSE</h1>
+                    <p class="lead mb-4">
+                        Nous vous accompagnons vers l'excellence opérationnelle grâce à nos formations professionnelles et nos certifications aux normes de qualité (ISO, MASE, etc.). Développez vos compétences et celles de vos équipes pour un avenir prospère et durable.
+                    </p>
+                    <a href="{% url 'contact' %}" class="btn btn-primary-custom btn-lg px-4">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="references" class="my-5 section-padding">
+        <h2 class="text-center fw-bold mb-4" data-aos="fade-up">Nos Références</h2>
+        <p class="lead text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+            La confiance de nos clients et partenaires est notre plus grande fierté.
+        </p>
+
+        <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="text-center fw-bold mb-4">Ils nous ont fait confiance</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-5 text-center align-items-center">
+                <div class="col"><img src="{% static 'images/logo-dangote.jpg' %}" alt="Logo Dangote" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/cofina-logo.png' %}" alt="Logo Cofino" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/aibd-logo.jpg' %}" alt="Logo MAIBD" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/dimbaya-logo.png' %}" alt="Logo Dombya Biscuit" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/senemeca-logo.png' %}" alt="Logo Senemeca" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/asepex-logo.jpg' %}" alt="Logo Asepex" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/logo-groupe-kirene.png' %}" alt="Logo Groupe Kirène" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/eiffage-logo.png' %}" alt="Logo Eiffage" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/ucad-logo.png' %}" alt="Logo ucad" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/gmd-logo.jpg' %}" alt="Logo gmd" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/vivo-energie-logo.png' %}" alt="Logo vivo energy" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/logo-gainde-2000.png' %}" alt="Logo gainde 2000" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/cde-logo.png' %}" alt="Logo cde" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/BIA-logo.png' %}" alt="Logo BIA" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col"><img src="{% static 'images/cse-logo.png' %}" alt="Logo cse" class="img-fluid" style="max-height: 100px;"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h3 class="text-center fw-bold mb-4">Nos partenaires internationaux</h3>
+            <div class="row justify-content-center g-4 text-center">
+                <div class="col-md-3"><img src="{% static 'images/pecb.png' %}" alt="Logo PECB" class="img-fluid" style="max-height: 100px;"></div>
+                <div class="col-md-3"><img src="{% static 'images/certi-trust.png' %}" alt="Logo CertiTrust" class="img-fluid" style="max-height: 100px;"></div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
